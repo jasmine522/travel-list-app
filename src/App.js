@@ -8,13 +8,15 @@ import SignUp from "./Components/SignUp";
 
 function App() {
   return (
-    <div className="App">
-      <BucketList />
-      <Home />
-      <Login />
-      <Places />
-      <SignUp />
-    </div>
+    <Router>
+      <Routes>
+      <Route path-="/" element={<Home />} />
+      <Route path-="/login" element={<Login />} />
+      <Route path-="/signUp" element={<SignUp />} />
+      <Route path-="/places" element={<Places />} />
+      <Route path-="/bucketList" element={<BucketList />} />
+      </Routes>
+    </Router>
   )
 }
 
