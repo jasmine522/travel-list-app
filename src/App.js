@@ -8,7 +8,7 @@ import SignUp from "./Components/SignUp";
 function App() {
   return (
     <div className="App">
-      <BucketList />
+      <BucketLists />
       <Home />
       <Login />
       <Places />
